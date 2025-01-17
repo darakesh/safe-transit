@@ -1,0 +1,6 @@
+<div id="faceLivenessReactContainer" *ngIf="showLivenessCapture && session_id">
+    <app-faceliveness-react-wrapper #faceliveness [sessionId]="session_id"
+        (livenessResults)="handleLivenessAnalysisResults($event)"
+        (livenessErrors)="handleErrors($event)"
+        ></app-faceliveness-react-wrapper>
+</div>
